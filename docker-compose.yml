@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  meshcentral:
+    container_name: meshcentral
+    image: marlirukmana/meshcentral2:latest
+    networks:
+      root_wg-easy:
+        ipv4_address: 10.8.1.4
+
+networks:
+  root_wg-easy:
+    external: true
